@@ -1,0 +1,66 @@
+{
+  "name": "ssi-kit",
+  "version": "1.0.0",
+  "description": "A package to manage your identities and certificates in a decentralized way.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "decentralized identity",
+    "blockchain"
+  ],
+  "author": "Muhammad Masood",
+  "license": "ISC",
+  "dependencies": {
+    "@docknetwork/sdk": "^9.1.1",
+    "@pinata/sdk": "^2.1.0",
+    "@thirdweb-dev/storage": "^2.0.9",
+    "@types/express": "^4.17.21",
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "did-jwt": "^8.0.4",
+    "did-jwt-vc": "^4.0.4",
+    "did-resolver": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.10.0",
+    "ethr-did": "^3.0.21",
+    "ethr-did-resolver": "^10.1.10",
+    "express": "^4.19.2",
+    "firebase": "^10.12.4",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.7",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "ts-jest": "^29.1.2",
+    "tsup": "^8.0.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}

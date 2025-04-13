@@ -99,6 +99,10 @@ export const storeDataOnIPFS = async (decodedDIDJWT) => {
   return cid;
 };
 
+app.get("/", (req, res) => {
+  res.send("Welcome to SSI Backend.");
+});
+
 ///////////////////////////////////
 // Decentralized Identifiers (DIDS)
 ///////////////////////////////////
